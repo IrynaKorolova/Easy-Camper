@@ -347,7 +347,7 @@ a {
   color: inherit;
 }
 :focus {
-  outline: 3px solid rgb(21, 40, 58);
+  outline: 2px solid rgb(175, 76, 31);
 }
 button {
   color: inherit;
@@ -471,6 +471,10 @@ span {
   color: var(--secondary-text-color);
   font-size: 18px;
 }
+.text-colored:hover {
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
+  transition: 0.3s;
+}
 /*-------------- Priority Section Start ---------------*/
 .priority-section {
   padding: 110px 0 130px;
@@ -521,10 +525,6 @@ span {
 .colored-link {
   font-weight: 500;
   font-size: 18px;
-  transition: 0.3s;
-}
-.colored-link:hover {
-  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
   transition: 0.3s;
 }
 .community-img {
