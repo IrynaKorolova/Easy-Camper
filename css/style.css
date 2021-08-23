@@ -521,6 +521,11 @@ span {
 .colored-link {
   font-weight: 500;
   font-size: 18px;
+  transition: 0.3s;
+}
+.colored-link:hover {
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
+  transition: 0.3s;
 }
 .community-img {
   object-fit: cover;
@@ -536,4 +541,69 @@ span {
 }
 .advantages-text-m {
   margin-top: 50px;
+}
+/*-------------- Footer Start ---------------*/
+.footer {
+  background-color: var(--footer-background);
+  color: var(--main-text-color);
+  padding-top: 120px;
+  font-family: "Merriweather";
+  font-weight: bold;
+}
+.footer-inner {
+  padding: 96px 0 85px;
+}
+.footer-main-text {
+  width: 220px;
+}
+.footer-main-header {
+  font-size: 24px;
+  line-height: 1.3;
+}
+.footer-text {
+  font-size: 48px;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+.footer-header {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+.footer-links {
+  margin-top: 12px;
+  color: var(--main-text-color);
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 12px 0 12px;
+  transition: 0.3s;
+}
+.footer-links:hover {
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
+  transition: 0.3s;
+}
+/*-------------- Footer Nav Start ---------------*/
+.footer-about {
+  background-color: var(--footer-background);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  color: var(--main-text-color);
+}
+.about-inner {
+  padding: 29px 0 63px;
+}
+.footer-nav-links {
+  display: flex;
+}
+.footer-nav-link:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-link {
+  padding: 10px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
+  transition: 0.3s;
 }
