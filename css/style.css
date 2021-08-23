@@ -443,8 +443,8 @@ span {
 }
 
 /*-------------- Services Section Start ---------------*/
-.services {
-  width: 370px;
+.services-col {
+  width: 390px;
 }
 .services-section {
   padding: 350px 0 230px;
@@ -463,7 +463,7 @@ span {
   margin-top: 80px;
 }
 .services-text {
-  margin: 25px 0 30px;
+  margin-top: 25px;
   font-size: 16px;
 }
 .text-colored {
@@ -498,7 +498,7 @@ span {
 }
 /*-------------- Community Section Start ---------------*/
 .community-section {
-  padding: 130px 0 120px;
+  padding: 130px 0 230px;
 }
 .community-title {
   font-family: "Merriweather";
@@ -528,3 +528,12 @@ span {
   height: 418px;
 }
 /*-------------- Advantages Section Start ---------------*/
+.advantages-title {
+  font-size: 22px;
+}
+.advantages-text {
+  margin-top: 24px;
+}
+.advantages-text-m {
+  margin-top: 50px;
+}
