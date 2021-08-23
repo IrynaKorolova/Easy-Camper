@@ -355,7 +355,10 @@ button {
   cursor: pointer;
   border: 0;
 }
-
+.icon {
+  width: 32px;
+  height: 32px;
+}
 /*=========== Css Variables ==========*/
 :root {
   --main-text-color: rgb(0, 0, 0);
@@ -402,6 +405,11 @@ button {
   align-items: center;
   padding: 40px 0;
 }
+.menu-icon {
+  object-fit: cover;
+  width: 86px;
+  height: 53px;
+}
 /*-------------- Hero Section Start ---------------*/
 .hero-section {
   background: url(../img/main.png) no-repeat center/cover;
@@ -440,6 +448,11 @@ span {
 }
 .services-section {
   padding: 350px 0 230px;
+}
+.services-img {
+  object-fit: cover;
+  width: 225px;
+  height: 180px;
 }
 .services-title {
   font-family: "Merriweather";
@@ -510,6 +523,8 @@ span {
   font-size: 18px;
 }
 .community-img {
+  object-fit: cover;
   width: 230px;
   height: 418px;
 }
+/*-------------- Advantages Section Start ---------------*/
