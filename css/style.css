@@ -455,6 +455,7 @@ button {
   max-width: 740px;
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
   margin-top: -250px;
+  margin-left: -60px;
   padding: 96px 156px 75px 64px;
   background-color: var(--main);
 }
