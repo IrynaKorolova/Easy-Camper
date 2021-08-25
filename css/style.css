@@ -361,11 +361,11 @@ button {
 }
 /*=========== Css Variables ==========*/
 :root {
-  --main-text-color: rgb(0, 0, 0);
-  --secondary-text-color: #f78065;
-  --additional-text-color: rgba(0, 0, 0, 0.603);
-  --main-background: #fff;
-  --footer-background: #f7f7f7;
+  --main-color: rgb(0, 0, 0);
+  --secondary-color: #f78065;
+  --additional-color: rgba(0, 0, 0, 0.603);
+  --main: #fff;
+  --additional: #f7f7f7;
 }
 /*========== Container ==========*/
 .container {
@@ -379,19 +379,35 @@ button {
 }
 /*-------------- Buttons ---------------*/
 .btn {
-  background-color: var(--secondary-text-color);
-  color: var(--main-background);
+  background-color: var(--secondary-color);
+  color: var(--main);
   font-size: 18px;
   font-weight: bold;
-  padding: 15px 90px;
+  padding: 10px;
   transition: 0.3s;
+  min-width: 250px;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn:hover {
   background-color: #e45f41;
-  color: var(--main-background);
+  color: var(--main);
   transition: 0.3s;
 }
+.menu-btn {
+  background-color: transparent;
+}
+
+.btn-icon {
+  margin-right: 8px;
+}
 /*-------------- Header Start ---------------*/
+.logo {
+  width: 32px;
+  height: 32px;
+}
 .header {
   width: 100%;
   position: absolute;
@@ -405,36 +421,52 @@ button {
   align-items: center;
   padding: 40px 0;
 }
-.menu-icon {
-  object-fit: cover;
-  width: 86px;
-  height: 53px;
+.menu-img {
+  object-fit: contain;
+}
+/*-------------- Dropdown Start ---------------*/
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  background: white;
+  visibility: hidden;
+  white-space: nowrap;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  min-width: 130px;
+}
+
+.dropdown:hover > .dropdown-content,
+.dropdown:focus-within > .dropdown-content {
+  visibility: visible;
 }
 /*-------------- Hero Section Start ---------------*/
-.hero-section {
-  background: url(../img/main.png) no-repeat center/cover;
-  min-height: 50vh;
-  position: relative;
-  top: 0;
-  left: 0;
+.main-img {
+  width: 100%;
+  height: 650px;
 }
+
 .card {
   max-width: 740px;
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  transform: translate(10%, 50%);
+  margin-top: -250px;
   padding: 96px 156px 75px 64px;
-  background-color: var(--main-background);
+  background-color: var(--main);
 }
 .main-title {
   font-family: "Merriweather";
   font-weight: bold;
   font-size: 39px;
   line-height: 1.2;
-  color: var(--main-text-color);
+  color: var(--main-color);
 }
 span {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 .main-text {
   margin: 29px 0 29px;
@@ -447,7 +479,7 @@ span {
   width: 390px;
 }
 .services-section {
-  padding: 350px 0 230px;
+  padding: 150px 0 120px;
 }
 .services-img {
   object-fit: cover;
@@ -459,7 +491,7 @@ span {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.2;
-  color: var(--main-text-color);
+  color: var(--main-color);
   margin-top: 80px;
 }
 .services-text {
@@ -468,7 +500,7 @@ span {
 }
 .text-colored {
   font-weight: bold;
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
   font-size: 18px;
 }
 .text-colored:hover {
@@ -477,17 +509,22 @@ span {
 }
 /*-------------- Priority Section Start ---------------*/
 .priority-section {
-  padding: 110px 0 130px;
+  padding: 120px 0 250px;
+}
+.priority {
+  margin-top: 110px;
 }
 .section-title {
   font-family: "Merriweather";
   font-weight: bold;
   font-size: 36px;
   line-height: 1.3;
-  color: var(--main-text-color);
+  color: var(--main-color);
 }
 .priority-col {
   width: 260px;
+  display: flex;
+  flex-direction: column;
 }
 .priority-title {
   margin-top: 64px;
@@ -496,17 +533,16 @@ span {
 .priority-text {
   margin: 35px 0 20px;
   line-height: 1.7;
+  flex-grow: 1;
 }
-.text-m {
-  margin-top: 23px;
-}
+
 /*-------------- Community Section Start ---------------*/
 .community-section {
-  padding: 130px 0 230px;
+  padding: 130px 0 130px;
 }
 .community-title {
   font-family: "Merriweather";
-  color: var(--main-text-color);
+  color: var(--main-color);
   font-weight: bold;
   font-size: 24px;
   line-height: 1.3;
@@ -515,12 +551,14 @@ span {
 .community-text {
   margin: 8px 0 8px;
 }
-.main-community {
+.community-main-text {
   font-size: 18px;
   line-height: 1.3;
 }
 .community-main {
   width: 320px;
+  width: 490px;
+  margin-right: 120px;
 }
 .colored-link {
   font-weight: 500;
@@ -533,20 +571,22 @@ span {
   height: 418px;
 }
 /*-------------- Advantages Section Start ---------------*/
+.advantages-col {
+  display: flex;
+  flex-direction: column;
+}
 .advantages-title {
   font-size: 22px;
 }
 .advantages-text {
   margin-top: 24px;
+  flex-grow: 1;
 }
-.advantages-text-m {
-  margin-top: 50px;
-}
+
 /*-------------- Footer Start ---------------*/
 .footer {
-  background-color: var(--footer-background);
-  color: var(--main-text-color);
-  padding-top: 120px;
+  background-color: var(--additional);
+  color: var(--main-color);
   font-family: "Merriweather";
   font-weight: bold;
 }
@@ -571,8 +611,8 @@ span {
   margin-bottom: 12px;
 }
 .footer-links {
-  margin-top: 12px;
-  color: var(--main-text-color);
+  margin-top: 10px;
+  color: var(--main-color);
   font-family: "Montserrat";
   font-weight: normal;
   font-size: 14px;
@@ -586,9 +626,9 @@ span {
 }
 /*-------------- Footer Nav Start ---------------*/
 .footer-about {
-  background-color: var(--footer-background);
+  background-color: var(--additional);
   border-top: 1px solid rgba(0, 0, 0, 0.25);
-  color: var(--main-text-color);
+  color: var(--main-color);
 }
 .about-inner {
   padding: 29px 0 63px;

@@ -12,41 +12,129 @@
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a href="#"
+          <a href="/#index.html"
             ><img
-              class="icon"
-              src="./img/cube 1.png"
+              class="logo"
+              src="./img/logo.svg"
+              alt="logo"
               width="1"
               height="1"
               loading="lazy"
               decoding="async"
           /></a>
-          <a href="#"
-            ><img
-              class="menu-icon"
-              src="./img/menu.png"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-          /></a>
+          <div class="dropdown">
+            <button class="menu-btn" href="#">
+              <svg
+                class="menu-img"
+                width="86"
+                height="53"
+                viewBox="0 0 86 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="86" height="53" rx="26.5" fill="white" />
+                <path
+                  d="M56 10C47.164 10 40 17.163 40 26C40 34.837 47.164 42 56 42C64.836 42 72 34.837 72 26C72 17.163 64.836 10 56 10ZM56 38C52.249 38 48.902 36.277 46.702 33.581C47.705 30.547 49.711 28.122 52.228 26.89C50.288 25.646 49 23.475 49 21C49 17.376 51.754 14.395 55.284 14.036C55.522 14.022 55.758 14 56 14C56.242 14 56.478 14.022 56.716 14.036C60.246 14.395 63 17.376 63 21C63 23.475 61.712 25.646 59.772 26.89C62.29 28.123 64.295 30.548 65.298 33.581C63.098 36.277 59.751 38 56 38Z"
+                  fill="#F78065"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26.71 29.29L31.3 24.7C31.69 24.31 31.69 23.68 31.3 23.29C30.91 22.9 30.28 22.9 29.89 23.29L26 27.17L22.12 23.29C21.73 22.9 21.1 22.9 20.71 23.29C20.32 23.68 20.32 24.31 20.71 24.7L25.3 29.29C25.68 29.68 26.32 29.68 26.71 29.29Z"
+                  fill="#444B53"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
     <main class="main">
       <section class="hero-section">
-        <div class="card">
-          <h1 class="main-title">
-            Find out how we can <span>save your time</span> in Backpacking in
-            Europe
-          </h1>
-          <p class="main-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id
-            eget scelerisque amet etiam in sit commodo. Pretium ut duis orci
-            pulvinar pretium id consectetur.
-          </p>
-          <button class="btn" type="button">Explore</button>
+        <div class="main-img-wrapper">
+          <img
+            class="main-img"
+            src="./img/main_img.webp"
+            alt="woman"
+            width="1"
+            height="1"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="container inner">
+          <div class="card">
+            <h1 class="main-title">
+              Find out how we can <span>save your time</span> in Backpacking in
+              Europe
+            </h1>
+            <p class="main-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet
+              id eget scelerisque amet etiam in sit commodo. Pretium ut duis
+              orci pulvinar pretium id consectetur.
+            </p>
+            <button class="btn" type="button">
+              <svg
+                class="btn-icon"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d)">
+                  <path
+                    d="M12 0.5C5.37225 0.5 0 5.87225 0 12.5C0 19.1277 5.37225 24.5 12 24.5C18.6277 24.5 24 19.1277 24 12.5C24 5.87225 18.6277 0.5 12 0.5ZM22.5 12.494C22.5 12.8165 21.7478 13.316 20.52 13.793C20.5523 13.3678 20.571 12.9373 20.571 12.5C20.571 12.0613 20.5522 11.63 20.5192 11.2032C21.7462 11.6772 22.4993 12.1723 22.4993 12.488C22.5 12.4903 22.5 12.4917 22.5 12.494ZM12.012 23C12.012 23 12.0082 23 12.006 23C11.6835 23 11.184 22.2478 10.707 21.02C11.1322 21.0523 11.5627 21.071 12 21.071C12.438 21.071 12.87 21.0522 13.2968 21.0192C12.822 22.247 12.3278 23 12.012 23ZM12 19.5718C11.3857 19.5718 10.7873 19.529 10.2015 19.46C9.97875 18.6253 9.7845 17.642 9.63975 16.5335C10.4032 16.586 11.1915 16.6138 11.9992 16.6138C12.8077 16.6138 13.596 16.5853 14.3595 16.5335C14.2147 17.642 14.0213 18.6245 13.7993 19.4592C13.2135 19.5282 12.615 19.5718 12 19.5718ZM12 15.1145C11.1068 15.1145 10.2705 15.0785 9.48225 15.0178C9.4215 14.2303 9.3855 13.3932 9.3855 12.5C9.3855 11.6068 9.4215 10.7705 9.48225 9.98225C10.2697 9.9215 11.106 9.8855 11.9992 9.8855C12.8925 9.8855 13.7287 9.9215 14.5162 9.98225C14.577 10.7697 14.613 11.606 14.613 12.5C14.613 13.3932 14.577 14.2295 14.5162 15.0178C13.7302 15.0778 12.8932 15.1145 12 15.1145ZM1.5 12.512C1.5 12.5098 1.5 12.5082 1.5 12.506C1.5 12.1835 2.25225 11.684 3.48 11.207C3.447 11.6322 3.42825 12.0627 3.42825 12.5C3.42825 12.9387 3.447 13.37 3.48 13.7968C2.253 13.3228 1.5 12.8278 1.5 12.512ZM4.92825 12.5C4.92825 11.8857 4.971 11.2873 5.04 10.7015C5.87475 10.4788 6.858 10.2845 7.9665 10.1397C7.914 10.9032 7.88625 11.6915 7.88625 12.4992C7.88625 13.3077 7.91475 14.096 7.9665 14.8595C6.858 14.7155 5.87475 14.522 5.04 14.3C4.97175 13.7135 4.92825 13.115 4.92825 12.5ZM12 2.0015C12.3232 2.07725 12.819 2.7605 13.293 3.98C12.8678 3.94775 12.4373 3.92825 12 3.92825C11.5627 3.92825 11.1322 3.947 10.707 3.98C11.181 2.7605 11.6768 2.0765 12 2.0015ZM12 5.42825C12.6143 5.42825 13.2127 5.471 13.7977 5.53925C14.0205 6.374 14.2147 7.3565 14.3595 8.46575C13.596 8.41325 12.8078 8.3855 12 8.3855C11.1922 8.3855 10.4033 8.414 9.6405 8.46575C9.78525 7.3565 9.9795 6.37475 10.2022 5.53925C10.7872 5.47175 11.3857 5.42825 12 5.42825ZM16.0335 10.1397C17.142 10.2845 18.1245 10.478 18.9592 10.7C19.0282 11.2858 19.071 11.885 19.071 12.5C19.071 13.1143 19.0282 13.7128 18.9592 14.2985C18.1245 14.5213 17.1413 14.7155 16.0328 14.8602C16.0853 14.0967 16.113 13.3085 16.113 12.5007C16.1145 11.6915 16.086 10.9032 16.0335 10.1397ZM20.2965 9.53225C20.1923 8.95925 20.067 8.39825 19.9065 7.862C20.7787 8.5355 21.462 9.32 21.9075 10.1802C21.438 9.94475 20.895 9.72875 20.2965 9.53225ZM18.6795 9.08225C17.823 8.885 16.8833 8.72825 15.8895 8.61125C15.7725 7.6175 15.6158 6.67775 15.4185 5.82125C16.2893 6.02375 17.1135 6.29525 17.8643 6.63725C18.2048 7.38725 18.4763 8.2115 18.6795 9.08225ZM14.9685 4.2035C14.772 3.605 14.556 3.062 14.3205 2.5925C15.1815 3.038 15.9652 3.72125 16.6387 4.5935C16.1017 4.433 15.5408 4.30775 14.9685 4.2035ZM9.6795 2.5925C9.444 3.062 9.228 3.605 9.0315 4.2035C8.4585 4.30775 7.8975 4.433 7.36125 4.5935C8.03475 3.72125 8.81925 3.038 9.6795 2.5925ZM8.58225 5.8205C8.385 6.677 8.22825 7.61675 8.11125 8.6105C7.1175 8.7275 6.17775 8.88425 5.32125 9.0815C5.52375 8.21075 5.79525 7.3865 6.13725 6.63575C6.88725 6.29525 7.71075 6.02375 8.58225 5.8205ZM3.7035 9.53225C3.105 9.72875 2.562 9.94475 2.0925 10.1802C2.538 9.31925 3.22125 8.5355 4.0935 7.862C3.933 8.39825 3.80775 8.95925 3.7035 9.53225ZM2.0925 14.8198C2.562 15.0553 3.105 15.2713 3.7035 15.4678C3.80775 16.0408 3.933 16.6018 4.0935 17.138C3.22125 16.4653 2.538 15.6808 2.0925 14.8198ZM5.3205 15.9177C6.177 16.115 7.11675 16.2717 8.1105 16.3887C8.2275 17.3825 8.38425 18.3223 8.5815 19.1788C7.71075 18.9763 6.8865 18.7047 6.13575 18.3627C5.79525 17.6127 5.52375 16.7892 5.3205 15.9177ZM9.0315 20.7965C9.228 21.395 9.444 21.938 9.6795 22.4075C8.81925 21.962 8.03475 21.2787 7.36125 20.4065C7.89825 20.567 8.45925 20.6923 9.0315 20.7965ZM14.3205 22.4075C14.556 21.938 14.772 21.395 14.9685 20.7965C15.5415 20.6923 16.1025 20.567 16.6387 20.4065C15.9652 21.2787 15.1807 21.962 14.3205 22.4075ZM15.4177 19.1795C15.615 18.323 15.7717 17.3833 15.8887 16.3895C16.8825 16.2725 17.8223 16.1158 18.6788 15.9185C18.4763 16.7893 18.2047 17.6135 17.8627 18.3643C17.1127 18.7048 16.2892 18.9763 15.4177 19.1795ZM20.2965 15.4678C20.895 15.2713 21.438 15.0553 21.9075 14.8198C21.462 15.6808 20.7787 16.4645 19.9065 17.138C20.067 16.6018 20.1923 16.0408 20.2965 15.4678ZM20.664 6.5795C20.1465 6.19325 19.5787 5.843 18.969 5.531C18.657 4.9205 18.3067 4.3535 17.9205 3.836C18.996 4.57325 19.9268 5.504 20.664 6.5795ZM6.0795 3.836C5.69325 4.3535 5.343 4.92125 5.031 5.531C4.4205 5.843 3.8535 6.19325 3.336 6.5795C4.07325 5.504 5.004 4.57325 6.0795 3.836ZM3.336 18.4205C3.8535 18.8067 4.42125 19.157 5.031 19.469C5.343 20.0795 5.69325 20.6465 6.0795 21.164C5.004 20.4268 4.07325 19.496 3.336 18.4205ZM17.9205 21.164C18.3067 20.6465 18.657 20.0795 18.969 19.469C19.5795 19.157 20.1465 18.8067 20.664 18.4205C19.9268 19.496 18.996 20.4268 17.9205 21.164Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d"
+                    x="-4"
+                    y="0.5"
+                    width="32"
+                    height="32"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feflood flood-opacity="0" result="BackgroundImageFix" />
+                    <fecolormatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feoffset dy="4" />
+                    <fegaussianblur stddeviation="2" />
+                    <fecomposite in2="hardAlpha" operator="out" />
+                    <fecolormatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feblend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feblend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              Explore
+            </button>
+          </div>
         </div>
       </section>
       <section class="services-section">
@@ -54,16 +142,16 @@
           <div class="services-col">
             <img
               class="services-img"
-              src="./img/girl.png"
+              src="./img/hero-img-girl.svg"
               alt="girl"
               width="1"
               height="1"
               loading="lazy"
               decoding="async"
             />
-            <h3 class="services-title">
+            <h2 class="services-title">
               Promoting your territory towards foreign tourists
-            </h3>
+            </h2>
             <p class="services-text">
               EasyCamper wants to promote the excellence of Italian food and
               wine, art, culture and the economy.
@@ -76,16 +164,16 @@
           <div class="services-col">
             <img
               class="services-img"
-              src="./img/map.png"
+              src="./img/hero-img-map.svg"
               alt="map"
               width="1"
               height="1"
               loading="lazy"
               decoding="async"
             />
-            <h3 class="services-title">
+            <h2 class="services-title">
               Additional services designed for the needs of campers
-            </h3>
+            </h2>
             <p class="services-text">
               Travelling often means that you dont have time to organise
               excursions along your route. EasyCamper takes care of that!
@@ -98,16 +186,16 @@
           <div class="services-col">
             <img
               class="services-img"
-              src="./img/phone.png"
+              src="./img/hero-img-phone.svg"
               alt="phone"
               width="1"
               height="1"
               loading="lazy"
               decoding="async"
             />
-            <h3 class="services-title">
+            <h2 class="services-title">
               Free online showcase with promotion in Italy and abroad
-            </h3>
+            </h2>
             <p class="services-text">
               Forget about the time and money spent on creating your own website
               or e-commerce system for bookings.
@@ -120,85 +208,84 @@
         </div>
       </section>
 
-      <div class="container">
-        <h2 class="section-title">
-          Making your facility known is our priority
-        </h2>
-      </div>
-
       <section class="priority-section">
-        <div class="container inner">
-          <div class="priority-col">
-            <img
-              class="icon"
-              src="./img/format-list-checks-1.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Choose the type of stop
-            </h3>
-            <p class="priority-text">
-              Select the type of stopover you are ordering from Equipped Area,
-              Camping and Agricamping
-            </p>
-            <a href="#" class="text-colored">Show me more </a>
-          </div>
-          <div class="priority-col">
-            <img
-              class="icon"
-              src="./img/spellcheck-2.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Describe your structure
-            </h3>
-            <p class="priority-text">
-              Describe thee property, location and nearby attractions
-            </p>
-            <a href="#" class="text-colored text-m">Show me more </a>
-          </div>
-          <div class="priority-col">
-            <img
-              class="icon"
-              src="./img/WCR_Text-Frame-Add-3.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">Build your showcase</h3>
-            <p class="priority-text">
-              Add photos, videos and descriptions Define the price of each type
-              of that make your propety truly
-            </p>
-            <a href="#" class="text-colored">Show me more </a>
-          </div>
-          <div class="priority-col">
-            <img
-              class="icon"
-              src="./img/WCR_Calendar-Today-4.png"
-              alt="calendar icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Prices and Availability
-            </h3>
-            <p class="priority-text">
-              Pitch and configure the availablity calendar
-            </p>
-            <a href="#" class="text-colored text-m">Show me more </a>
+        <div class="container">
+          <h2 class="section-title">
+            Making your facility known is our priority
+          </h2>
+          <div class="priority inner">
+            <div class="priority-col">
+              <img
+                class="icon"
+                src="./img/priority-note.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h2 class="priority-title services-title">
+                Choose the type of stop
+              </h2>
+              <p class="priority-text">
+                Select the type of stopover you are ordering from Equipped Area,
+                Camping and Agricamping
+              </p>
+              <a href="#" class="text-colored">Show me more </a>
+            </div>
+            <div class="priority-col">
+              <img
+                class="icon"
+                src="./img/priority-spellchecker.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h2 class="priority-title services-title">
+                Describe your structure
+              </h2>
+              <p class="priority-text">
+                Describe thee property, location and nearby attractions
+              </p>
+              <a href="#" class="text-colored text-m">Show me more </a>
+            </div>
+            <div class="priority-col">
+              <img
+                class="icon"
+                src="./img/priority-frame.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h2 class="priority-title services-title">Build your showcase</h2>
+              <p class="priority-text">
+                Add photos, videos and descriptions Define the price of each
+                type of that make your propety truly
+              </p>
+              <a href="#" class="text-colored">Show me more </a>
+            </div>
+            <div class="priority-col">
+              <img
+                class="icon"
+                src="./img/priority-calendar.svg"
+                alt="calendar icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h2 class="priority-title services-title">
+                Prices and Availability
+              </h2>
+              <p class="priority-text">
+                Pitch and configure the availablity calendar
+              </p>
+              <a href="#" class="text-colored text-m">Show me more </a>
+            </div>
           </div>
         </div>
       </section>
@@ -208,118 +295,120 @@
             <h2 class="section-title">
               Join the community campervan sites managers.
             </h2>
-            <p class="main-text main-community">
+            <p class="main-text community-main-text">
               Discover all the equibbed areas in Italy. Find the shop with all
               the services for you and your camper.
             </p>
             <button class="btn" type="button">Start</button>
           </div>
-          <div class="community-col">
-            <img
-              class="community-img"
-              src="./img/community-1.png"
-              alt="sitting girl"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="community-title">Lucciano</h3>
-            <p class="community-text">Rome</p>
-            <a href="#" class="colored-link text-colored">View the Site</a>
-          </div>
-          <div class="community-col">
-            <img
-              class="community-img"
-              src="./img/community-2.png"
-              alt="boy"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="community-title">Cremonesi</h3>
-            <p class="community-text">Florence</p>
-            <a href="#" class="colored-link text-colored">View the Site</a>
-          </div>
-          <div class="community-col">
-            <img
-              class="community-img"
-              src="./img/community-3.png"
-              alt="standing girl"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="community-title">Beneventi</h3>
-            <p class="community-text">Venice</p>
-            <a href="#" class="colored-link text-colored">View the Site</a>
+          <div class="container inner community-section-inner">
+            <div class="community-col">
+              <img
+                class="community-img"
+                src="./img/community-girl.webp"
+                alt="sitting girl"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="community-title">Lucciano</h3>
+              <p class="community-text">Rome</p>
+              <a href="#" class="colored-link text-colored">View the Site</a>
+            </div>
+            <div class="community-col">
+              <img
+                class="community-img"
+                src="./img/community-man.webp"
+                alt="boy"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="community-title">Cremonesi</h3>
+              <p class="community-text">Florence</p>
+              <a href="#" class="colored-link text-colored">View the Site</a>
+            </div>
+            <div class="community-col">
+              <img
+                class="community-img"
+                src="./img/community-girl2.webp"
+                alt="standing girl"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="community-title">Beneventi</h3>
+              <p class="community-text">Venice</p>
+              <a href="#" class="colored-link text-colored">View the Site</a>
+            </div>
           </div>
         </div>
       </section>
-      <div class="container">
-        <h2 class="section-title">Our Advantages</h2>
-      </div>
 
       <section class="advantages-section priority-section">
-        <div class="container inner">
-          <div class="advantages-col services-col">
-            <img
-              class="icon"
-              src="./img/advantages-1.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Convenience and Transparency
-            </h3>
-            <p class="advantages-text advantages-text-m">
-              You don’t have to find out later or only after camenierk and
-              trarsparent Easyamper ratains pliacas and beautias of your
-              tariaary and halpin a fixed commission on each transaction of 5
-            </p>
-          </div>
-          <div class="advantages-col services-col">
-            <img
-              class="icon"
-              src="./img/advantages-2.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Digital marketing and editorial support
-            </h3>
-            <p class="advantages-text">
-              You don’t have to find out later or only after camenierk and
-              trarsparent Easyamper ratains pliacas and beautias of your
-              tariaary and halpin a fixed commission on each transaction of 5
-            </p>
-          </div>
-          <div class="advantages-col services-col">
-            <img
-              class="icon"
-              src="./img/advantages-3.png"
-              alt="icon"
-              width="1"
-              height="1"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="priority-title services-title">
-              Community of services dedicated to campers
-            </h3>
-            <p class="advantages-text">
-              You don’t have to find out later or only after camenierk and
-              trarsparent Easyamper ratains pliacas and beautias of your
-              tariaary and halpin a fixed commission on each transaction of 5
-            </p>
+        <div class="container">
+          <h2 class="section-title">Our Advantages</h2>
+          <div class="container inner priority">
+            <div class="advantages-col services-col">
+              <img
+                class="icon"
+                src="./img/advantages-img1.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="priority-title services-title">
+                Convenience and Transparency in work
+              </h3>
+              <p class="advantages-text">
+                You don’t have to find out later or only after camenierk and
+                trarsparent Easyamper ratains pliacas and beautias of your
+                tariaary and halpin a fixed commission on each transaction of 5
+              </p>
+            </div>
+            <div class="advantages-col services-col">
+              <img
+                class="icon"
+                src="./img/advantages-img2.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="priority-title services-title">
+                Digital marketing and editorial support
+              </h3>
+              <p class="advantages-text">
+                You don’t have to find out later or only after camenierk and
+                trarsparent Easyamper ratains pliacas and beautias of your
+                tariaary and halpin a fixed commission on each transaction of 5
+              </p>
+            </div>
+            <div class="advantages-col services-col">
+              <img
+                class="icon"
+                src="./img/advantages-img3.svg"
+                alt="icon"
+                width="1"
+                height="1"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="priority-title services-title">
+                Community of services dedicated to campers
+              </h3>
+              <p class="advantages-text">
+                You don’t have to find out later or only after camenierk and
+                trarsparent Easyamper ratains pliacas and beautias of your
+                tariaary and halpin a fixed commission on each transaction of 5
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -328,11 +417,11 @@
     <footer class="footer">
       <div class="container inner footer-inner">
         <div class="footer-main-text">
-          <h3 class="footer-main-header">Easy Camper</h3>
+          <h2 class="footer-main-header">Easy Camper</h2>
           <p class="footer-text">When Passion Meets Comfort.</p>
         </div>
         <div class="footer-information">
-          <h4 class="footer-header">Discover the Network</h4>
+          <h3 class="footer-header">Discover the Network</h3>
           <ul>
             <li class="footer-link">
               <a class="footer-links" href="#">Where to shop</a>
@@ -349,7 +438,7 @@
           </ul>
         </div>
         <div class="footer-information">
-          <h4 class="footer-header">Become a Manager</h4>
+          <h3 class="footer-header">Become a Manager</h3>
           <ul>
             <li class="footer-link">
               <a class="footer-links" href="#">Join your Pairing</a>
@@ -363,7 +452,7 @@
           </ul>
         </div>
         <div class="footer-information">
-          <h4 class="footer-header">Assistance</h4>
+          <h3 class="footer-header">Assistance</h3>
           <ul>
             <li class="footer-link">
               <a class="footer-links" href="#">Support Center</a>
