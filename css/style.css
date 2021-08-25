@@ -362,7 +362,7 @@ button {
 /*=========== Css Variables ==========*/
 :root {
   --main-color: rgb(0, 0, 0);
-  --secondary-color: #f78065;
+  --secondary-color: #ce4628;
   --additional-color: rgba(0, 0, 0, 0.603);
   --main: #fff;
   --additional: #f7f7f7;
@@ -396,10 +396,9 @@ button {
   color: var(--main);
   transition: 0.3s;
 }
-.menu-btn {
+.dropdown-btn {
   background-color: transparent;
 }
-
 .btn-icon {
   margin-right: 8px;
 }
@@ -440,17 +439,17 @@ button {
   text-align: center;
   min-width: 130px;
 }
-
 .dropdown:hover > .dropdown-content,
 .dropdown:focus-within > .dropdown-content {
   visibility: visible;
 }
 /*-------------- Hero Section Start ---------------*/
+
 .main-img {
+  min-width: 1440px;
   width: 100%;
   height: 650px;
 }
-
 .card {
   max-width: 740px;
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
