@@ -429,6 +429,7 @@ button {
 }
 .dropdown-content {
   position: absolute;
+  right: 40px;
   background: white;
   visibility: hidden;
   white-space: nowrap;
@@ -437,6 +438,7 @@ button {
   flex-direction: column;
   gap: 10px;
   text-align: center;
+  border-radius: 5px;
   min-width: 130px;
 }
 .dropdown:hover > .dropdown-content,
