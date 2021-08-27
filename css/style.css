@@ -376,7 +376,6 @@ button {
 .inner {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 /*-------------- Buttons ---------------*/
 .btn {
@@ -650,6 +649,8 @@ span {
 }
 .about-inner {
   padding: 29px 0 63px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-nav-links {
   display: flex;
@@ -672,20 +673,20 @@ span {
   .container {
     max-width: 960px;
   }
+  .inner {
+    flex-wrap: wrap;
+  }
   .card {
     max-width: 720px;
   }
   .services-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .services-text {
     font-size: 14px;
   }
   .priority-col {
     width: 22%;
-  }
-  .priority-section {
-    padding-bottom: 120px;
   }
   .community-section-inner {
     width: 100%;
@@ -703,12 +704,15 @@ span {
   .container {
     max-width: 720px;
   }
+  .priority-section {
+    padding: 100px 0 100px;
+  }
   .footer-text {
     font-size: 32px;
     margin: 15px 0 60px;
   }
-  .about-inner {
-    justify-content: center;
+  .nav-link {
+    padding: 12px 0 12px;
   }
   .footer-nav-links {
     margin-top: 35px;
@@ -719,6 +723,13 @@ span {
 @media (max-width: 767.98px) {
   .container {
     max-width: 540px;
+  }
+  .main-title {
+    font-size: 30px;
+  }
+  .services-col-items {
+    align-items: center;
+    width: 100%;
   }
   .services-col {
     width: 100%;
@@ -732,11 +743,17 @@ span {
   .priority-col:nth-child(n + 3) {
     margin-top: 50px;
   }
+  .priority {
+    margin-top: 70px;
+  }
   .community-col:last-child {
     margin-top: 60px;
   }
   .community-col:first-child {
     margin-right: 25px;
+  }
+  .community-section {
+    padding: 100px 0 100px;
   }
   .community-section-inner {
     justify-content: center;
@@ -747,14 +764,19 @@ span {
   .footer-header {
     font-size: 15px;
   }
+  .footer-nav-links {
+    justify-content: space-between;
+  }
   .footer-links {
     font-size: 12px;
   }
   .nav-link {
     font-size: 13px;
+    padding: 12px 0 12px;
   }
   .about-inner {
     padding-bottom: 40px;
+    display: block;
   }
 }
 
@@ -765,23 +787,62 @@ span {
     padding: 0 15px 0 15px;
   }
   .card {
-    padding: 66px 56px;
+    padding: 36px 36px;
+    width: 100%;
+  }
+  .main-title {
+    font-size: 28px;
   }
   .btn {
     font-size: 16px;
     min-width: 180px;
     min-height: 55px;
   }
+  .main-text {
+    font-size: 16px;
+  }
   .priority-section {
     padding-top: 80px;
   }
   .section-title {
     font-size: 30px;
-    text-align: center;
   }
-  .services-col {
+  .services-col-items {
     align-items: center;
     width: 100%;
+  }
+  .community-section-inner {
+    margin-top: 50px;
+  }
+  .community-col:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  .community-col:first-child {
+    margin-right: 0;
+  }
+  .footer-information {
+    margin-top: 55px;
+  }
+  .footer-links {
+    font-size: 14px;
+  }
+  .footer-inner {
+    display: block;
+  }
+  .about-inner {
+    padding: 30px 0 30px;
+  }
+  .footer-nav-links {
+    display: block;
+  }
+  .nav-link {
+    padding: 15px 0 15px;
+  }
+  .footer-nav-link:not(:last-child) {
+    margin-right: 0;
+  }
+  .copyright {
+    font-size: 10px;
   }
 }
 /*============ Media Queries End==========*/
