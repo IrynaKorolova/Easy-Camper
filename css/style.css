@@ -419,8 +419,8 @@ button {
 .dropdown-btn {
   background-color: var(--main);
   border-radius: 26px;
-  width: 86px;
-  height: 53px;
+  min-width: 86px;
+  min-height: 53px;
   padding: 10px 14px 11px;
 }
 .btn-icon {
