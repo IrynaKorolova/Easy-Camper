@@ -726,7 +726,7 @@ span {
   }
   .community-section-inner {
     width: 100%;
-    padding-top: 150px;
+    margin-top: 150px;
   }
   .community-main {
     width: 100%;
@@ -760,6 +760,20 @@ span {
   .main-title {
     font-size: 30px;
   }
+  .card {
+    padding: 55px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .main-img {
+    height: 400px;
+    object-fit: cover;
+    object-position: right;
+  }
+  .section-title {
+    text-align: center;
+  }
   .services-col-items {
     align-items: center;
     text-align: center;
@@ -769,7 +783,7 @@ span {
     width: 100%;
   }
   .services-col:not(:first-child) {
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .priority-col {
     width: 45%;
@@ -780,6 +794,12 @@ span {
   .priority {
     margin-top: 70px;
   }
+  .community-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   .community-col:last-child {
     margin-top: 60px;
   }
@@ -787,10 +807,14 @@ span {
     margin-right: 25px;
   }
   .community-section {
-    padding: 100px 0 100px;
+    padding: 40px 0 60px;
   }
   .community-section-inner {
     justify-content: center;
+  }
+  .advantages-col {
+    align-items: center;
+    text-align: center;
   }
   .footer-main-text {
     width: 100%;
@@ -820,23 +844,42 @@ span {
     width: 100%;
     padding: 0 15px 0 15px;
   }
+  .header-nav {
+    padding: 20px 0;
+  }
+  .main-img {
+    height: 300px;
+  }
   .card {
-    padding: 36px 36px;
+    padding: 25px;
     width: 100%;
+    max-width: 100%;
+    margin-top: 0;
   }
   .main-title {
-    font-size: 28px;
+    font-size: 20px;
   }
   .btn {
-    font-size: 16px;
-    min-width: 160px;
-    min-height: 55px;
+    font-size: 14px;
+    min-width: 140px;
+    min-height: 45px;
   }
   .main-text {
-    font-size: 16px;
+    margin: 15px 0 15px;
+    font-size: 14px;
   }
   .priority-section {
     padding-top: 80px;
+  }
+  .priority-title {
+    margin-top: 20px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .priority-text {
+    margin: 15px 0 10px;
   }
   .priority-col {
     width: 100%;
@@ -847,13 +890,22 @@ span {
     margin-top: 60px;
   }
   .section-title {
-    font-size: 30px;
+    font-size: 26px;
+  }
+  .services-title {
+    margin-top: 25px;
   }
   .services-section {
-    padding-bottom: 70px;
+    padding: 70px 0 45px;
   }
   .priority-section {
-    padding: 60px 0 60px;
+    padding: 40px 0 60px;
+  }
+  .community-title {
+    margin-top: 18px;
+  }
+  .community-section-inner {
+    margin-top: 50px;
   }
   .community-col {
     width: 100%;
@@ -867,12 +919,12 @@ span {
   .community-col:first-child {
     margin-right: 0;
   }
-  .advantages-col {
-    align-items: center;
-    text-align: center;
-  }
   .footer-information {
     margin-top: 55px;
+  }
+  .footer-text {
+    margin: 0;
+    font-size: 30px;
   }
   .footer-links {
     font-size: 14px;
@@ -887,7 +939,7 @@ span {
     padding: 15px 0 15px;
   }
   .footer-inner {
-    padding: 96px 15px 85px;
+    padding: 35px 15px 20px;
   }
   .footer-nav-link:not(:last-child) {
     margin-right: 0;
