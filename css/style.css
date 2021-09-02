@@ -836,6 +836,9 @@ span {
     padding-bottom: 40px;
     flex-direction: column;
   }
+  .copyright {
+    font-size: 10px;
+  }
 }
 
 /*==== X-Small devices (portrait phones, less than 576px) ====*/
@@ -873,6 +876,9 @@ span {
   }
   .priority-title {
     margin-top: 20px;
+  }
+  .priority {
+    margin-top: 35px;
   }
   .icon {
     width: 60px;
